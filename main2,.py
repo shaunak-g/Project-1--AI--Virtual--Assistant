@@ -66,7 +66,7 @@ def processCommand(c):
 if __name__ == "__main__":
     speak("Initializing Echo....")
     while True:
-        # Listen for the wake word "Jarvis"
+        # Listen for the wake word 
         # obtain audio from the microphone
         r = sr.Recognizer()
          
