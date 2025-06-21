@@ -76,7 +76,7 @@ if __name__ == "__main__":
                 audio = r.listen(source, timeout=3, phrase_time_limit=3)
             word = r.recognize_google(audio)
             if(word.lower() == "Echo"):
-                speak("Hola")
+                speak("Ki re")
                 # Listen for command
                 with sr.Microphone() as source:
                     print("Echo Active...")
