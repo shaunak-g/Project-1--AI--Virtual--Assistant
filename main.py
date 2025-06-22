@@ -5,6 +5,7 @@ import musicLibrary
 import os
 from datetime import datetime
 import pyjokes
+import random
 
 
 recognizer = sr.Recognizer()
@@ -58,7 +59,37 @@ def processCommand(c):
 
     elif c.lower().startswith("tell me a joke"):
         tell_joke()
-   
+    elif c.lower().startswith("let's play a game"):
+        speak("Let's play a game of snake water gun")
+        computer=random.randint[(1,2,3)]
+        choice=[1,2,3]
+        user=int(input("enter a choice: "))
+
+        if choice == "1":
+            if computer == "Snake":
+                speak("It's a tie!")
+            elif computer == "Water":
+                speak("You lose, computer chose water!")
+            elif computer == "Gun":
+                speak("You win, computer chose gun!")
+            elif choice == "2":
+                if computer == "Water":
+                    speak("It's a tie!")
+                elif computer == "Snake":
+                    speak("You win, computer chose snake!")
+                elif computer == "Gun":
+                    speak("You lose, computer chose gun!")
+                elif choice == "3":
+                    if computer == "Gun":
+                        speak("It's a tie!")
+                    elif computer == "Snake":
+                        speak("You win, computer chose snake!")
+                    elif computer == "Water":
+                        speak("You lose, computer chose water!")
+                    else:
+                        speak("Invalid choice!") 
+                        
+
 
 
 
