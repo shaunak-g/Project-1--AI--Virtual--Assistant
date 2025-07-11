@@ -19,7 +19,7 @@ def speak(text):
 
 
 def tell_time():
-    now=datetime.now()
+    now=datetime.now() #date.....
     current_time= now.strftime("%I:%M %p")  
     speak(f"the current time is {current_time}")
     print(f"the current time is {current_time}")
